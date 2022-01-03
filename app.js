@@ -80,7 +80,7 @@ new Vue({
         monster_heal : function(value){
             if(value<=0){
                 this.monster_heal=0;
-                if(confirm("OYUNU KAYBETTİN. Tekrar oynamak ister misin?")){
+                if(confirm("HELAL OLSUN BE. Tekrar oynamak ister misin?")){
                     this.player_heal=100;
                     this.monster_heal=100;
                     this.logs=[];
@@ -94,12 +94,13 @@ new Vue({
 computed : {
     player_progress : function(){
         return{
-        width : this.player_heal + "%"}
+            width : this.player_heal + "%"
+        }
     },
     monster_progress : function(){
-    return{
-    width : this.monster_heal + "%"
-     }
+        return{
+            width : this.monster_heal + "%"
+        }
     }
 }
 
